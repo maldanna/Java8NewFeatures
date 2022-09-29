@@ -23,10 +23,12 @@ class StreamsAPI{
         mapObj.put(2,"ram");
         mapObj.put(3,"india");
 
+        // bi consumer
         mapObj.forEach((key,value)->{System.out.println("key is: "+key+" value is : "+value);});
 
         System.out.println("******************");
-        
+
+        // single consumer
         mapObj.entrySet().stream().forEach(obj->
                 {System.out.println("key is: "+obj.getKey() + "  values is : "+obj.getValue());}
             );
